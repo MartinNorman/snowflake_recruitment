@@ -1,0 +1,21 @@
+
+version: 2
+
+      
+models:
+    - name: Events_3
+      columns:
+          - name: person
+          - name: person_date
+          - name: person_date_status
+          - name: attempt
+          - name: attemps_events
+          - name: status_group
+          - name: status_overall
+          - name: status
+          - name: status_waterfall
+          - name: date
+          - name: information
+          - name: avslutad_process
+          - name: avslutad_process_datum
+            data_type: varchar
