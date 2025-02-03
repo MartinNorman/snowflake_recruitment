@@ -9,6 +9,8 @@ SELECT
     ev.PERSON_DATE_STATUS,
     ev.STATUS_GROUP,
     ev.STATUS_OVERALL,
+    ev.EVENT_CREATED_AT,
+    ev.EVENT_CREATED_BY,
     max_date.MAX_DATE
 FROM {{ ref('Events_1') }} ev
 left join ({{ ref('MaxDate') }}) max_date
