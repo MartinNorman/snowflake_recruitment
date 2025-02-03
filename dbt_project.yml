@@ -38,5 +38,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   ClimberRecruitments:
     - name: Events_1
-#        +materialized: view
-
+      config:
+        grants:
+          select: ['SYSADMIN']
